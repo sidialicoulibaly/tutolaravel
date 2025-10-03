@@ -15,7 +15,7 @@ class CategorieController extends Controller
        $validate=$request->validate([
             'name'=>'required|min:3|max:50',
             'price'=>'required|numeric',
-            'description'=>'required|min:5|max:255',
+            'description'=>'required|min:5|max:250',
        ],
       [
         'name.required'=>'le nom est obligatoire',
